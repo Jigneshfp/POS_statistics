@@ -11,16 +11,16 @@ library(stringr)
 library(tidyr)
 library(readxl)
 
-#load dataset from ATM_oct.xls
+#load dataset from ATM_oct.xlsx
 ATM_oct <- read_xlsx("ATM_oct.xlsx")
 index <- complete.cases(ATM_oct)
-ATM_oct <- ATM_oct[index, ]
+ATM_oct <- as.data.frame(ATM_oct[index, ])
 
 #subset data to features we wish to keep/use and rename the same.
 POS_oct <- ATM_oct[, c(2,5,6,9,11,14,16)]
 col_names <- c("Bank_name", "POS_online", "POS_offline", "NO_of.trans.credit", "amount_transc.credit", "NO_of.transc.debit", "amount.transc.debit")
 colnames(POS_oct) <- col_names
-POS_oct <- POS_oct %>% mutate(month = "jan") # adding new variable "month".
+POS_oct <- POS_oct %>% mutate(month = "oct") # adding new column "month".
 
 #convert character to #1 integer and #2 double.
 int_col <- c(2,3,4,6)
