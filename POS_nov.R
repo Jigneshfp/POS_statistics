@@ -18,7 +18,7 @@ ATM_nov <- as.data.frame(ATM_nov[index, ])
 
 #subset data to features we wish to keep/use and rename the same.
 POS_nov <- ATM_nov[, c(2,5,6,9,11,14,16)]
-col_names <- c("Bank_name", "POS_online", "POS_offline", "NO_of.trans.credit", "amount_transc.credit", "NO_of.transc.debit", "amount.transc.debit")
+col_names <- c("Bank_name", "POS_online", "POS_offline", "NO_of.transc.credit", "amount_transc.credit", "NO_of.transc.debit", "amount_transc.debit")
 colnames(POS_nov) <- col_names
 POS_nov <- POS_nov %>% mutate(month = "nov") # adding new column "month".
 
