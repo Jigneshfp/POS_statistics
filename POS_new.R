@@ -15,20 +15,21 @@ clean_atm_data <- function(file_name) {
   df <- df[, c(2,5,6,9,11,14,16)]
   col_names <- c("Bank_name", "POS_online", "POS_offline", "NO_of.transc.credit", "amount_transc.credit", "NO_of.transc.debit", "amount_transc.debit")
   colnames(df) <- col_names
-  df <- df %>% mutate(month_year) %>% separate(month_year, c("month", "year"), sep = "_")
+  df <- df %>% mutate(month_year)
  
    #converts data type of columns appropriately.
-  int_col <- c(2,3,4,6, 9)
+  int_col <- c(2,3,4,6)
   double_col <- c(5,7)
   df[, int_col] <- lapply(df[, int_col], as.integer) # converts to integer.
   df[, double_col] <- lapply(df[, double_col], as.double) # converts to double.
-  df$month <- factor(df$month, levels = month.abb) # converts to factor.
   ATM_df[[paste0("POS_",month_year)]] <<- df
 }
 
  #apply clean_ATM_data function to all excel files.
 lapply(ATM_files, clean_atm_data) %>% invisible()
 POS_all <- bind_rows(ATM_df) %>% data.frame()# binds multiple data frames together by row.
-POS_all <- POS_all %>% arrange(year, month)
+POS_all$month_year <- factor(POS_all$month_year, levels = paste0(month.abb, "_", rep(16:17, c(12,12)))) # converts to factor.
+
+POS_all <- POS_all %>% arrange(month_year)
 
 #This is temp script.
