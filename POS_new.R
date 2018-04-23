@@ -30,3 +30,5 @@ clean_atm_data <- function(file_name) {
 lapply(ATM_files, clean_atm_data) %>% invisible()
 POS_all <- bind_rows(ATM_df) %>% data.frame()# binds multiple data frames together by row.
 POS_all <- POS_all %>% arrange(year, month)
+
+#This is temp script.
