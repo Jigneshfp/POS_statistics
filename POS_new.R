@@ -93,6 +93,6 @@ g3 <- ggplot(POS_summary3, aes(x = month_year, y = avg_NO.of.transc, col = Trans
         plot.subtitle = element_text(hjust = 0.5), 
         axis.text.x = element_text(angle = 90, hjust = 1, vjust = 1))
 
-g1
-g2
-g3
+g1 # line chart for monthly average number of POS deployed.
+g2 # line chart for monthly average amount of transactions by debit/credit-card.
+g3 # line chart for montly averarge nmber of transcations by debit/credit-card.
