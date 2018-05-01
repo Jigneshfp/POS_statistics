@@ -1,6 +1,12 @@
-# POS data cleaning and exploratory data analysis
+# Post-demonetization digital transcation exploratory data analysis 
 
-This is a small cleaning and exploratory data analysis project of digital transcations using POS(point of sale) during year 2016-2017.
+This is a small exploratory data analysis and data visualization project on digital transcation using PoS( Point of sale) before and after demonetization in india.
 
 ### Introduction
+Digital payments using debit and credit cards at Point of Sale (Pos) terminals has accelerated very quickly after demonetisation and goverment's effort to push for digital payments. Post-demonetisation, banks have been able to install large number of PoS terminals. As a result, we have observed sharp growth in digital payments.
+
+
+### Setup
+Make sure data and R Markdown files are in same directory. 
+
 
