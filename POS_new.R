@@ -1,3 +1,4 @@
+#Loading necessary packages 
 library(tidyverse)
 library(readxl)
 ATM_files <- list.files(pattern = "\\.XLSX$", ignore.case = TRUE) # Lists all files with .XLSX extension.
