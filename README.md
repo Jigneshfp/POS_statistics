@@ -1,4 +1,5 @@
 # Post-demonetization digital transcation exploratory data analysis 
+![alt text](http://blog.unibulmerchantservices.com/wp-content/uploads/2011/09/POS-Terminal-Risk-Management-Rules-You-Need-to-Know.jpg)
 
 This is a small exploratory data analysis and data visualization project on digital transcation using PoS( Point of sale) before and after demonetization in india.
 
