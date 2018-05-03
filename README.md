@@ -16,5 +16,10 @@ R and R studios
  * Install RStudio's IDE (stands for integrated development environment), a powerful user interface for R: http://www.rstudio.com/ide/download/
 
 ### How to replicate/run this analysis:
+* Clone down this repository on your machine 
+* Extract all files into your working directory
+* Make sure to keep all 24 data files (all excel files) which are in **data** folder and code file **POS_new.R** into same directory
+* Run **POS_new.R** in Rstudio (ensure the working directory is set to the above directory)
 
- 
+### Refelction on the project
+Originally I wanted to scrap data directly from the [RBI website] (https://rbi.org.in/Scripts/ATMView.aspx) and do the data analysis so that I don't have to download data files for this project separately. However, adding web scraping had dramatically slowed down execution time of running the entire script. I wanted to make sure it runs little faster and for that I downloaded all files beforehand.
