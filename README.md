@@ -11,7 +11,6 @@ Here we will clean datasets from https://rbi.org.in/Scripts/ATMView.aspx and the
 
 ### Installation and setup instructions
 R and R studios
- -Download and install [R, a free software environment for statistical computing and graphics from CRAN](http://www.r-project.org/), the Comprehensive R Archive Network. It is highly recommended to install a precompiled binary distribution for your operating system – use the links up at the top of the CRAN page linked to above!
- -
-
+*Download and install [R, a free software environment for statistical computing and graphics from CRAN](http://www.r-project.org/), the Comprehensive R Archive Network. It is highly recommended to install a precompiled binary distribution for your operating system – use the links up at the top of the CRAN page linked to above!
+*Install RStudio's IDE (stands for integrated development environment), a powerful user interface for R: http://www.rstudio.com/ide/download/
 
