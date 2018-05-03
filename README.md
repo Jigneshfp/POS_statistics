@@ -22,4 +22,4 @@ R and R studios
 * Run **POS_new.R** in Rstudio (ensure the working directory is set to the above directory)
 
 ### Refelction on the project
-Originally I wanted to scrap data directly from the [RBI website] (https://rbi.org.in/Scripts/ATMView.aspx) and do the data analysis so that I don't have to download data files for this project separately. However, adding web scraping had dramatically slowed down execution time of running the entire script. I wanted to make sure it runs little faster and for that I downloaded all files beforehand.
+Originally I wanted to scrap data directly from the [RBI website](https://rbi.org.in/Scripts/ATMView.aspx) and do the data analysis so that I don't have to download data files for this project separately. However, adding web scraping had dramatically slowed down execution time of running the entire script. I wanted to make sure it runs little faster and for that I downloaded all files beforehand.
