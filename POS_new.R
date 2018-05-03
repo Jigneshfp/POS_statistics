@@ -1,6 +1,7 @@
 #installs packages if not installed
-install.packages("tidyverse")
-install.packages("readxl")
+
+#install.packages("tidyverse")
+#install.packages("readxl")
 
 # loads the packages
 library(tidyverse)
