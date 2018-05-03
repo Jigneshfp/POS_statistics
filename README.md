@@ -9,7 +9,9 @@ Digital payments using debit and credit cards at Point of Sale (Pos) terminals h
 Here we will clean datasets from https://rbi.org.in/Scripts/ATMView.aspx and then merge them together for time series analysis of PoS transaction uding january 2016 to december 2017. 
 
 
-### Setup
-Make sure data and R Markdown files are in same directory. 
+### Installation and setup instructions
+R and R studios
+ -Download and install [R, a free software environment for statistical computing and graphics from CRAN](http://www.r-project.org/), the Comprehensive R Archive Network. It is highly recommended to install a precompiled binary distribution for your operating system – use the links up at the top of the CRAN page linked to above!
+ -
 
 
